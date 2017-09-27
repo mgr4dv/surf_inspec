@@ -1,0 +1,15 @@
+<launch>
+  <node name="hokuyo_front" pkg="urg_node" type="urg_node">
+    <rosparam command="load" file="$(find ust_10lx)/config/lidar_front.yaml" />
+    <remap from="scan" to="mid_scan"/>
+  </node>
+
+  <node name="hokuyo_back" pkg="urg_node" type="urg_node">
+    <rosparam command="load" file="$(find ust_10lx)/config/lidar_back.yaml" />
+    <remap from="scan" to="back_scan"/>
+    <param name="angle_min" value="-1.6"/>
+    <param name="angle_max" value="1.6"/>
+  </node>
+
+  <node name="lidar_tf" pkg="ust_10lx" type="lidar_tf_node"/>
+</launch>

@@ -1,0 +1,10 @@
+<launch>
+  <!-- include file="$(find vicon_bridge)/launch/vicon.launch" / -->
+  <include file="$(find ust_10lx)/launch/urg_node.launch" />
+  <include file="$(find cartographer_ros)/launch/backpack_3d.launch" />
+  <node type="laser_scan_assembler" name="laser_scan_assembler" pkg="laser_assembler" output="screen">
+    <remap from="scan" to="mid_scan"/>
+    <param name="fixed_frame" type="string" value="mid_lidar" />
+  </node>
+  <node type="point_cloud_gen_node" name="snapshotter" pkg="point_cloud_gen" />
+</launch>

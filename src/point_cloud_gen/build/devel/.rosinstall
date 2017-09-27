@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/administrator/catkin_ws2/src/point_cloud_gen/build/devel/setup.sh

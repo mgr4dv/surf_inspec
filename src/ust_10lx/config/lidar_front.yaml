@@ -1,0 +1,4 @@
+ip_address: 192.168.1.12
+frame_id: mid_lidar
+calibrate_time: true
+

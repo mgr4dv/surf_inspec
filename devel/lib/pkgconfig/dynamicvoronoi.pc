@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/devel
+
+Name: dynamicvoronoi
+Description: Description of dynamicvoronoi
+Version: 0.0.0
+Cflags: -I/home/administrator/catkin_ws/src/dynamicvoronoi/include
+Libs: -L/home/administrator/catkin_ws/devel/lib -ldynamicvoronoi
+Requires: 

@@ -1,0 +1,40 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/adhoc_communication_generate_messages_cpp"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/RecvString.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/MmMapUpdate.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ExpClusterElement.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/MmListOfPoints.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/CMgrRobotUpdate.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ExpCluster.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/CMgrDimensions.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ExpAuctionElement.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/MmRobotPosition.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/MmControl.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/MmPoint.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ExpAuction.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ExpFrontier.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ExpFrontierElement.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ShutDown.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/GetGroupState.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/BroadcastString.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/BroadcastCMgrRobotUpdate.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendExpFrontier.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendMmControl.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendMmRobotPosition.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/GetNeighbors.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendQuaternion.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendCMgrRobotUpdate.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendOccupancyGrid.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendString.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendMmMapUpdate.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendExpCluster.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendExpAuction.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/ChangeMCMembership.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendMmPoint.h"
+  "/home/administrator/catkin_ws/devel/include/adhoc_communication/SendTwist.h"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang)
+  INCLUDE(CMakeFiles/adhoc_communication_generate_messages_cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

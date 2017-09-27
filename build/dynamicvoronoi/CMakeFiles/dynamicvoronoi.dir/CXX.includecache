@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/administrator/catkin_ws/src/dynamicvoronoi/include/bucketedqueue.h
+vector
+-
+set
+-
+queue
+-
+assert.h
+-
+point.h
+/home/administrator/catkin_ws/src/dynamicvoronoi/include/point.h
+
+/home/administrator/catkin_ws/src/dynamicvoronoi/include/dynamicvoronoi.h
+stdlib.h
+-
+stdio.h
+-
+limits.h
+-
+queue
+-
+bucketedqueue.h
+/home/administrator/catkin_ws/src/dynamicvoronoi/include/bucketedqueue.h
+
+/home/administrator/catkin_ws/src/dynamicvoronoi/include/point.h
+
+/home/administrator/catkin_ws/src/dynamicvoronoi/src/dynamicvoronoi.cpp
+dynamicvoronoi.h
+/home/administrator/catkin_ws/src/dynamicvoronoi/src/dynamicvoronoi.h
+math.h
+-
+iostream
+-
+

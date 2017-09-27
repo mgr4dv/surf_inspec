@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/devel
+
+Name: explorer
+Description: Description of explorer
+Version: 0.1.6
+Cflags: -I/home/administrator/catkin_ws/src/aau_multi_robot/explorer/include
+Libs: -L/home/administrator/catkin_ws/devel/lib 
+Requires: roscpp rospy std_msgs message_runtime adhoc_communication map_merger

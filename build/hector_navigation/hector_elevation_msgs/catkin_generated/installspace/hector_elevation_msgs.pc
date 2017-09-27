@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/install
+
+Name: hector_elevation_msgs
+Description: Description of hector_elevation_msgs
+Version: 0.0.0
+Cflags: -I/home/administrator/catkin_ws/install/include
+Libs: -L/home/administrator/catkin_ws/install/lib 
+Requires: message_runtime geometry_msgs std_msgs

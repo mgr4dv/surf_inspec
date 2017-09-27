@@ -1,0 +1,5 @@
+<launch>
+  <node type="zed_pcl_echo_node" pkg="zed_echo" name="pcl_echo"/>
+  <node type="zed_odom_echo_node" pkg="zed_echo" name="odom_echo"/>
+  <node type="zed_tf_node" pkg="zed_echo" name="zed_tf"/>
+</launch>

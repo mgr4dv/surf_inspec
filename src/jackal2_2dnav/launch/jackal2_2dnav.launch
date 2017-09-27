@@ -1,0 +1,31 @@
+<launch>
+  <master auto="start"/>
+  
+  <arg name="no_static_map" default="false" />
+  
+  <arg name="base_global_planner" default="voronoi_planner/VoronoiPlanner" />
+
+  <include file="$(find ust_10lx)/launch/urg_node.launch" />
+  <!-- include file="$(find vicon_bridge)/launch/vicon.launch" / -->
+  <!-- include file="$(find vicon_pose)/launch/vicon_pose.launch" / -->
+ 
+  <node pkg="gmapping" type="slam_gmapping" respawn="false" name="slam_gmapping">
+    <remap from="scan" to="/mid_scan"/>
+  </node>
+
+  <!-- Run AMCL -->
+  <include file="$(find amcl)/examples/amcl_omni.launch" />
+
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="base_global_planner" value="voronoi_planner/VoronoiPlanner" />
+    <rosparam file="$(find jackal2_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find jackal2_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find jackal2_2dnav)/config/local_costmap_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find jackal2_2dnav)/config/global_costmap_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find jackal2_2dnav)/config/base_local_planner_params.yaml" command="load" />
+    
+    <param name="global_costmap/width" value="35.0" if="$(arg no_static_map)" />
+    <param name="global_costmap/height" value="35.0" if="$(arg no_static_map)" />
+    
+  </node>
+</launch>

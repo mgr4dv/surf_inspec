@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/matrix.cpp
+matrix.h
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/matrix.h
+cassert
+-
+cstdlib
+-
+algorithm
+-
+
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/matrix.h
+initializer_list
+-
+matrix.cpp
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/matrix.cpp
+
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/munkres.cpp
+munkres.h
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/munkres.h
+iostream
+-
+cmath
+-
+limits
+-
+
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/munkres.h
+matrix.h
+/home/administrator/catkin_ws/src/aau_multi_robot/explorer/src/src/matrix.h
+list
+-
+utility
+-
+

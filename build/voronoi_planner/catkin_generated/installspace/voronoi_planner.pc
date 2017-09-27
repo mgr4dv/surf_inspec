@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/install
+
+Name: voronoi_planner
+Description: Description of voronoi_planner
+Version: 0.1.0
+Cflags: -I/home/administrator/catkin_ws/install/include
+Libs: -L/home/administrator/catkin_ws/install/lib -lvoronoi_planner -ldynamic_voronoi
+Requires: costmap_2d dynamic_reconfigure geometry_msgs nav_core nav_msgs pluginlib roscpp tf dynamicvoronoi

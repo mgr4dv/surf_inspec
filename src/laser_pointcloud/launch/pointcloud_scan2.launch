@@ -1,0 +1,45 @@
+<launch>
+  <!-- include file="$(find vicon_bridge)/launch/vicon.launch" / -->
+  <include file="$(find ust_10lx)/launch/urg_node.launch" />
+  <include file="$(find octomap_server)/launch/octomap_mapping.launch" />
+
+  <node type="ground_scan_filter_node" name="ground_filter" pkg="ground_scan_filter" />
+
+  <!-- node pkg="gmapping" type="slam_gmapping" respawn="false" name="slam_gmapping">
+    <remap from="scan" to="/back_scan/filtered"/>
+  </node -->
+
+  <!-- node type="laser_scan_assembler" name="mid_assembler" pkg="laser_assembler" output="screen">
+    <remap from="scan" to="mid_scan"/>
+    <remap from="/assemble_scans2" to="/mid/assemble_scans2"/>
+    <param name="fixed_frame" type="string" value="mid_lidar" />
+  </node -->
+
+  <node type="laser_scan_assembler" name="back_assembler" pkg="laser_assembler" output="screen">
+    <remap from="scan" to="/back_scan/filtered"/>
+    <remap from="/assemble_scans2" to="/rear/assemble_scans2"/>
+    <param name="fixed_frame" type="string" value="rear_lidar" />
+  </node>
+
+  <!-- node type="laser_pointcloud_node" name="snapshotter_mid" pkg="laser_pointcloud">
+    <remap from="/assemble_scans2" to="/mid/assemble_scans2"/>
+  </node -->
+
+  <node type="laser_pointcloud_node" name="snapshotter_rear" pkg="laser_pointcloud">
+    <remap from="/assemble_scans2" to="/rear/assemble_scans2"/>
+  </node>
+  <!-- node pkg="nodelet" type="nodelet" name="pcl_manager" args="manager" output="screen" / -->
+
+  <!-- Run a VoxelGrid filter to clean NaNs and downsample the data -->
+  <!-- node pkg="nodelet" type="nodelet" name="voxel_grid" args="load pcl/VoxelGrid pcl_manager" output="screen">
+    <remap from="~input" to="/assembled_cloud" />
+    <rosparam>
+      filter_field_name: z
+      filter_limit_min: 0.01
+      filter_limit_max: 1.5
+      filter_limit_negative: False
+      leaf_size: 0.01
+    </rosparam>
+  </node -->
+
+</launch>

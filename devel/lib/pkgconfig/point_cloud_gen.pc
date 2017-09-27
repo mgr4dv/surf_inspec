@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/devel
+
+Name: point_cloud_gen
+Description: Description of point_cloud_gen
+Version: 0.0.0
+Cflags: -I/home/administrator/catkin_ws/src/point_cloud_gen/include
+Libs: -L/home/administrator/catkin_ws/devel/lib -lpoint_cloud_gen
+Requires: laser_assembler roscpp sensor_msgs std_msgs

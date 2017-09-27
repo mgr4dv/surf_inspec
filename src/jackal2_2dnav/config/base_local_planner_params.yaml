@@ -1,0 +1,23 @@
+TrajectoryPlannerROS:
+  max_vel_x: 0.3
+  min_vel_x: -0.3
+  max_vel_theta: 1.0
+  min_in_place_vel_theta: 0.2
+
+  acc_lim_theta: 3.2
+  acc_lim_x: 1.0
+  acc_lim_y: 1.0
+
+  holonomic_robot: false
+  meter_scoring: true
+
+# BEGINNING OF EDITS FOR TESTING
+# Global Planner Parameters
+#BaseGlobalPlanner:
+#  allow_unknown: false
+#  use_dijkstra: false
+#  use_quadratic: true
+#  use_grid_path: false
+#  old_navfn_behavior: false
+
+

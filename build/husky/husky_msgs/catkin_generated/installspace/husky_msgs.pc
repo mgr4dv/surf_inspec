@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/install
+
+Name: husky_msgs
+Description: Description of husky_msgs
+Version: 0.2.7
+Cflags: -I/home/administrator/catkin_ws/install/include
+Libs: -L/home/administrator/catkin_ws/install/lib 
+Requires: std_msgs message_runtime

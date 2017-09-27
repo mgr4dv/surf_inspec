@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/install
+
+Name: obstacle_nav
+Description: Description of obstacle_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/administrator/catkin_ws/install/lib 
+Requires: 

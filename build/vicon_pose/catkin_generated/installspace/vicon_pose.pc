@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/install
+
+Name: vicon_pose
+Description: Description of vicon_pose
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/administrator/catkin_ws/install/lib 
+Requires: 

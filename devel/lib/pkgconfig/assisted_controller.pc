@@ -1,0 +1,8 @@
+prefix=/home/administrator/catkin_ws/devel
+
+Name: assisted_controller
+Description: Description of assisted_controller
+Version: 0.0.0
+Cflags: -I/home/administrator/catkin_ws/src/assisted_controller/include
+Libs: -L/home/administrator/catkin_ws/devel/lib -lassisted_controller
+Requires: geometry_msgs nav_msgs roscpp sensor_msgs std_msgs

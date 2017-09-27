@@ -1,0 +1,4 @@
+ip_address: 192.168.1.10
+frame_id: rear_lidar
+calibrate_time: true
+
